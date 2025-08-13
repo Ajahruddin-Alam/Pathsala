@@ -2051,6 +2051,16 @@ section {
   font-size: 14px;
 }
 
+#Contact dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    display: block;
+  }
+  #Contact dd {
+    margin-bottom: 10px;
+    display: block;
+  }
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
