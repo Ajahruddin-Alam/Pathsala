@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Data Analytics Mastery | PathShala</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#e03a3c;
+--dark:#111827;
+--light:#f8fafc;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:var(--light);
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.analytics-hero{
+
+background:linear-gradient(
+135deg,
+#111827,
+#1f2937,
+#e03a3c
+);
+
+padding:140px 0;
+color:white;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.analytics-hero::before{
+
+content:'DATA';
+
+position:absolute;
+font-size:220px;
+font-weight:900;
+opacity:.05;
+top:30px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.analytics-hero h1{
+
+font-size:65px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.analytics-hero p{
+
+max-width:850px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+}
+
+.analytics-btn{
+
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:white;
+color:#e03a3c;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.analytics-btn:hover{
+
+transform:translateY(-5px);
+color:#e03a3c;
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+
+font-size:42px;
+font-weight:700;
+}
+
+.overview-card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+height:100%;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.overview-card:hover{
+
+transform:translateY(-8px);
+}
+
+.overview-card i{
+
+font-size:45px;
+color:#e03a3c;
+margin-bottom:15px;
+}
+
+.learning-card{
+
+background:white;
+padding:25px;
+border-radius:20px;
+height:100%;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.learning-card:hover{
+
+transform:translateY(-5px);
+}
+
+.learning-card i{
+
+font-size:35px;
+color:#e03a3c;
+margin-bottom:15px;
+}
+
+.progress-section{
+
+background:white;
+padding:30px;
+border-radius:20px;
+margin-top:-50px;
+position:relative;
+z-index:5;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="analytics-hero">
+
+<div class="container">
+
+<h1>
+Data Analytics Mastery
+</h1>
+
+<p>
+
+Master Data Analytics,
+Excel,
+Power BI,
+Looker Studio,
+Data Visualization,
+Dashboard Development
+and Business Intelligence.
+
+</p>
+
+<a href="#modules" class="analytics-btn">
+
+Start Learning
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ROADMAP BAR -->
+
+<div class="container">
+
+<div class="progress-section">
+
+<h5>Analytics Learning Journey</h5>
+
+<div class="progress mt-3">
+
+<div
+class="progress-bar bg-danger"
+style="width:100%;">
+
+Beginner → Data Analyst
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- COURSE OVERVIEW -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Course Overview</h2>
+
+<p>
+
+Learn how to transform raw data
+into meaningful insights and
+professional dashboards.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="overview-card">
+
+<i class="bi bi-clock-history"></i>
+
+<h4>Duration</h4>
+
+<p>3 Months</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="overview-card">
+
+<i class="bi bi-journal-code"></i>
+
+<h4>Modules</h4>
+
+<p>8 Modules</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="overview-card">
+
+<i class="bi bi-kanban"></i>
+
+<h4>Projects</h4>
+
+<p>8+ Projects</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="overview-card">
+
+<i class="bi bi-award"></i>
+
+<h4>Certificate</h4>
+
+<p>Industry Ready</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LEARNING OUTCOMES -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>What You Will Learn</h2>
+
+<p>
+
+Skills required to become a modern
+Data Analyst.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-file-earmark-spreadsheet"></i>
+
+<h5>Advanced Excel</h5>
+
+<p>
+
+Formulas,
+Pivot Tables,
+Reports.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-bar-chart-line"></i>
+
+<h5>Power BI</h5>
+
+<p>
+
+Professional Dashboard Creation.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-pie-chart"></i>
+
+<h5>Looker Studio</h5>
+
+<p>
+
+Interactive Reporting Systems.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-graph-up-arrow"></i>
+
+<h5>Data Visualization</h5>
+
+<p>
+
+Charts,
+KPIs,
+Insights.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-database"></i>
+
+<h5>Data Cleaning</h5>
+
+<p>
+
+Prepare and organize data.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-speedometer2"></i>
+
+<h5>Dashboard Design</h5>
+
+<p>
+
+Build business dashboards.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-clipboard-data"></i>
+
+<h5>KPI Reporting</h5>
+
+<p>
+
+Track performance metrics.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<i class="bi bi-briefcase"></i>
+
+<h5>Business Intelligence</h5>
+
+<p>
+
+Convert data into decisions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MODULES -->
+
+<section id="modules" class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Analytics Learning Modules</h2>
+
+<p>
+
+Step-by-step roadmap to become
+a professional Data Analyst.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 1 - Introduction to Data Analytics</h4>
+
+<p>
+
+Understanding Data,
+Analytics Process,
+Business Insights.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 2 - Advanced Excel</h4>
+
+<p>
+
+Functions,
+Pivot Tables,
+Dashboards,
+Reports.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 3 - Data Cleaning</h4>
+
+<p>
+
+Prepare raw data for
+analysis and reporting.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 4 - Data Visualization</h4>
+
+<p>
+
+Charts,
+Graphs,
+KPIs and Insights.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 5 - Power BI Mastery</h4>
+
+<p>
+
+Create professional dashboards
+and business reports.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 6 - Looker Studio</h4>
+
+<p>
+
+Interactive dashboards and
+Google reporting systems.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 7 - Dashboard Development</h4>
+
+<p>
+
+Build real-world dashboards
+for organizations.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="module-card">
+
+<h4>Module 8 - Final Analytics Project</h4>
+
+<p>
+
+Create a complete
+Business Intelligence Solution.
+
+</p>
+
+<a href="#">
+Start Module
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LEARNING ROADMAP -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Learning Roadmap</h2>
+
+<p>
+
+Follow this roadmap from beginner
+to professional analyst.
+
+</p>
+
+</div>
+
+<div class="roadmap">
+
+<div class="roadmap-item">
+<span>Week 1</span>
+<h5>Analytics Basics</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 2</span>
+<h5>Excel Mastery</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 3</span>
+<h5>Data Cleaning</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 4</span>
+<h5>Visualization</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 5</span>
+<h5>Power BI</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 6</span>
+<h5>Looker Studio</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 7</span>
+<h5>Dashboards</h5>
+</div>
+
+<div class="roadmap-item">
+<span>Week 8</span>
+<h5>Final Project</h5>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TOOLS COVERED -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Tools You Will Master</h2>
+
+<p>
+
+Industry-leading analytics tools.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>Excel</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>Power BI</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>Looker Studio</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>Google Sheets</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>SQL</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-4">
+
+<div class="overview-card">
+
+<h5>ChatGPT</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CAREER OPPORTUNITIES -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Career Opportunities</h2>
+
+<p>
+
+High-demand careers after completing
+this program.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<h5>Data Analyst</h5>
+
+<p>
+
+Analyze business data
+and generate insights.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<h5>Business Analyst</h5>
+
+<p>
+
+Support business decisions
+through analytics.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<h5>MIS Executive</h5>
+
+<p>
+
+Manage reporting systems
+and dashboards.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="learning-card">
+
+<h5>BI Analyst</h5>
+
+<p>
+
+Build intelligence reports
+for organizations.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.module-card{
+
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+height:100%;
+transition:.3s;
+
+}
+
+.module-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.module-card h4{
+
+color:#e03a3c;
+font-weight:700;
+
+}
+
+.module-card a{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#e03a3c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+
+}
+
+.roadmap{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+
+}
+
+.roadmap-item{
+
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.roadmap-item span{
+
+display:inline-block;
+background:#e03a3c;
+color:white;
+padding:5px 15px;
+border-radius:30px;
+margin-bottom:10px;
+
+}
+
+@media(max-width:768px){
+
+.roadmap{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<!-- VIDEO LESSONS -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Video Lessons</h2>
+
+<p>
+
+Learn analytics through practical,
+industry-focused video tutorials.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-6">
+
+<div class="video-card">
+
+<iframe
+width="100%"
+height="315"
+src="https://www.youtube.com/embed/AGrl-H87pRU"
+title="Excel Analytics"
+allowfullscreen>
+</iframe>
+
+<h4 class="mt-3">
+Excel for Data Analytics
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="video-card">
+
+<iframe
+width="100%"
+height="315"
+src="https://www.youtube.com/embed/TmhQCQr_DCA"
+title="Power BI"
+allowfullscreen>
+</iframe>
+
+<h4 class="mt-3">
+Power BI Dashboard Development
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="video-card">
+
+<iframe
+width="100%"
+height="315"
+src="https://www.youtube.com/embed/5X5LWcLtkzg"
+title="Looker Studio"
+allowfullscreen>
+</iframe>
+
+<h4 class="mt-3">
+Looker Studio Reporting
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="video-card">
+
+<iframe
+width="100%"
+height="315"
+src="https://www.youtube.com/embed/r-uOLxNrNk8"
+title="Data Visualization"
+allowfullscreen>
+</iframe>
+
+<h4 class="mt-3">
+Data Visualization Fundamentals
+</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESOURCES -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Learning Resources</h2>
+
+<p>
+
+Download notes, templates,
+datasets and reporting resources.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="resource-card">
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+<h4>Excel Analytics Guide</h4>
+
+<p>
+
+Advanced Excel formulas,
+pivot tables and dashboards.
+
+</p>
+
+<a href="#">
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="resource-card">
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+<h4>Power BI Handbook</h4>
+
+<p>
+
+Build professional reports
+and dashboards.
+
+</p>
+
+<a href="#">
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="resource-card">
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+<h4>Looker Studio Guide</h4>
+
+<p>
+
+Interactive reporting
+and analytics.
+
+</p>
+
+<a href="#">
+Download PDF
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="resource-card">
+
+<i class="bi bi-file-earmark-spreadsheet"></i>
+
+<h4>Practice Datasets</h4>
+
+<p>
+
+Real-world datasets
+for practice projects.
+
+</p>
+
+<a href="#">
+Download Dataset
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Real World Analytics Projects</h2>
+
+<p>
+
+Build portfolio-ready dashboards
+and reporting systems.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>Attendance Dashboard</h4>
+
+<p>
+
+Track employee attendance,
+leave and performance.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>HR Analytics Dashboard</h4>
+
+<p>
+
+Monitor workforce KPIs
+and reporting metrics.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>Sales Dashboard</h4>
+
+<p>
+
+Visualize revenue,
+sales trends and growth.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>Project Monitoring Dashboard</h4>
+
+<p>
+
+Track project progress
+and completion status.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>NGO Reporting Dashboard</h4>
+
+<p>
+
+Analyze program and beneficiary data.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="project-card">
+
+<h4>Asset Management Dashboard</h4>
+
+<p>
+
+Track organizational assets
+and inventory.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STUDENT REVIEWS -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Student Success Stories</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+The Power BI modules helped me
+create my first professional dashboard.
+
+</p>
+
+<strong>
+Rohit Sharma
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Excellent practical examples
+and real-world datasets.
+
+</p>
+
+<strong>
+Neha Verma
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+I gained confidence in reporting
+and dashboard development.
+
+</p>
+
+<strong>
+Amit Kumar
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Frequently Asked Questions</h2>
+
+</div>
+
+<div class="accordion" id="faqAnalytics">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#faqA1">
+
+Do I need prior experience?
+
+</button>
+
+</h2>
+
+<div id="faqA1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+No. This course starts from beginner level.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#faqA2">
+
+Will I learn Power BI?
+
+</button>
+
+</h2>
+
+<div id="faqA2"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Yes. Power BI is covered in detail.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#faqA3">
+
+Will I get projects?
+
+</button>
+
+</h2>
+
+<div id="faqA3"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Yes. Multiple real-world analytics projects.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.video-card,
+.resource-card,
+.project-card,
+.review-card{
+
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+height:100%;
+transition:.3s;
+
+}
+
+.video-card:hover,
+.resource-card:hover,
+.project-card:hover,
+.review-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.resource-card{
+
+text-align:center;
+
+}
+
+.resource-card i{
+
+font-size:50px;
+color:#e03a3c;
+margin-bottom:15px;
+display:block;
+
+}
+
+.resource-card a{
+
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#e03a3c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+
+}
+
+.project-card h4{
+
+color:#e03a3c;
+font-weight:700;
+
+}
+
+.review-card{
+
+text-align:center;
+font-size:18px;
+
+}
+
+</style>
+
+<!-- ANALYTICS QUIZ -->
+
+<section class="py-5 bg-light" id="quiz">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Data Analytics Assessment</h2>
+
+<p>
+
+Complete the quiz and unlock
+your certificate.
+
+</p>
+
+</div>
+
+<div class="quiz-card">
+
+<!-- Question 1 -->
+
+<h4>
+1. Which tool is widely used for Business Intelligence?
+</h4>
+
+<label>
+<input type="radio" name="q1" value="1">
+Power BI
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q1" value="0">
+Photoshop
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q1" value="0">
+VS Code
+</label>
+
+<hr>
+
+<!-- Question 2 -->
+
+<h4>
+2. What is the purpose of Data Cleaning?
+</h4>
+
+<label>
+<input type="radio" name="q2" value="1">
+Prepare data for analysis
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q2" value="0">
+Delete all data
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q2" value="0">
+Create websites
+</label>
+
+<hr>
+
+<!-- Question 3 -->
+
+<h4>
+3. Which Excel feature summarizes data?
+</h4>
+
+<label>
+<input type="radio" name="q3" value="1">
+Pivot Table
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q3" value="0">
+WordArt
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q3" value="0">
+Paint
+</label>
+
+<hr>
+
+<!-- Question 4 -->
+
+<h4>
+4. Looker Studio is mainly used for?
+</h4>
+
+<label>
+<input type="radio" name="q4" value="1">
+Reporting & Dashboards
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q4" value="0">
+Video Editing
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q4" value="0">
+Programming
+</label>
+
+<hr>
+
+<!-- Question 5 -->
+
+<h4>
+5. KPI stands for?
+</h4>
+
+<label>
+<input type="radio" name="q5" value="1">
+Key Performance Indicator
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q5" value="0">
+Knowledge Process Interface
+</label>
+
+<br>
+
+<label>
+<input type="radio" name="q5" value="0">
+Key Project Information
+</label>
+
+<hr>
+
+<button
+class="btn btn-danger btn-lg"
+onclick="checkAnalyticsQuiz()">
+
+Submit Quiz
+
+</button>
+
+<div id="quizResult"
+class="mt-4 fw-bold">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATE -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Earn Your Certificate</h2>
+
+<p>
+
+Complete all modules,
+projects and assessment.
+
+</p>
+
+</div>
+
+<div class="certificate-box">
+
+<h1>
+🎓 Certificate of Completion
+</h1>
+
+<h3>
+Data Analytics Mastery
+</h3>
+
+<p>
+
+Awarded to learners who successfully
+complete the Data Analytics Program.
+
+</p>
+
+<div class="certificate-id">
+
+Certificate ID:
+PS-DA-2026-0001
+
+</div>
+
+<div id="certificateBtn">
+
+<a href="certificate.html"
+class="btn btn-success btn-lg mt-4">
+
+View Certificate
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+<div class="container text-center">
+
+<h2>
+Ready To Become A Data Analyst?
+</h2>
+
+<p>
+
+Master Excel,
+Power BI,
+Looker Studio and
+Business Intelligence Skills.
+
+</p>
+
+<a href="#modules"
+class="btn btn-light btn-lg">
+
+Start Learning
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<h3>PathShala</h3>
+
+<p>
+
+Learn Data Analytics,
+Artificial Intelligence,
+Automation and Development
+through practical learning.
+
+</p>
+
+</div>
+
+<div class="col-lg-4">
+
+<h4>Popular Courses</h4>
+
+<ul>
+
+<li>Data Analytics</li>
+<li>Artificial Intelligence</li>
+<li>Automation Engineering</li>
+<li>Full Stack Development</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-4">
+
+<h4>Contact</h4>
+
+<p>
+
+📧 ajahruddin7843@gmail.com
+
+<br><br>
+
+📍 Pune, Maharashtra
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center">
+
+© 2026 PathShala.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<style>
+
+.quiz-card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.certificate-box{
+
+background:white;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.certificate-box h1{
+
+color:#e03a3c;
+font-weight:700;
+
+}
+
+.certificate-id{
+
+margin-top:20px;
+font-weight:600;
+
+}
+
+.cta-section{
+
+background:linear-gradient(
+135deg,
+#111827,
+#e03a3c
+);
+
+padding:90px 20px;
+color:white;
+
+}
+
+.footer{
+
+background:#111827;
+color:white;
+padding:70px 0 30px;
+
+}
+
+.footer ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer li{
+
+margin-bottom:10px;
+
+}
+
+</style>
+
+<script>
+
+document.getElementById(
+"certificateBtn"
+).style.display="none";
+
+function checkAnalyticsQuiz(){
+
+let score=0;
+
+document
+.querySelectorAll(
+'input[type="radio"]:checked'
+)
+.forEach(answer=>{
+
+score+=Number(answer.value);
+
+});
+
+const result=
+document.getElementById(
+"quizResult"
+);
+
+if(score>=4){
+
+result.innerHTML=
+"✅ Congratulations! You passed the assessment.";
+
+result.style.color=
+"green";
+
+document.getElementById(
+"certificateBtn"
+).style.display=
+"block";
+
+}else{
+
+result.innerHTML=
+"❌ You need at least 4 correct answers to pass.";
+
+result.style.color=
+"red";
+
+}
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

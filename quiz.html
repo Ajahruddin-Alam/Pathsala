@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML Quiz | PathShala</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f8fafc;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.quiz-header{
+    background:#e03a3c;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.quiz-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    margin-top:30px;
+}
+
+.question{
+    margin-bottom:30px;
+}
+
+.result-box{
+    display:none;
+    margin-top:30px;
+    text-align:center;
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+    color:red;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="quiz-header">
+    <h2>HTML Fundamentals Quiz</h2>
+    <p>Answer all questions and check your score.</p>
+</div>
+
+<div class="container">
+
+<div class="quiz-card">
+
+<form id="quizForm">
+
+<!-- Q1 -->
+<div class="question">
+<h5>1. What does HTML stand for?</h5>
+
+<input type="radio" name="q1" value="1"> Hyper Text Markup Language<br>
+<input type="radio" name="q1" value="0"> Hyper Tool Markup Language<br>
+<input type="radio" name="q1" value="0"> Home Text Markup Language<br>
+<input type="radio" name="q1" value="0"> Hyper Transfer Markup Language
+</div>
+
+<!-- Q2 -->
+<div class="question">
+<h5>2. Which tag creates a heading?</h5>
+
+<input type="radio" name="q2" value="1"> &lt;h1&gt;<br>
+<input type="radio" name="q2" value="0"> &lt;head&gt;<br>
+<input type="radio" name="q2" value="0"> &lt;title&gt;<br>
+<input type="radio" name="q2" value="0"> &lt;p&gt;
+</div>
+
+<!-- Q3 -->
+<div class="question">
+<h5>3. Which tag creates a paragraph?</h5>
+
+<input type="radio" name="q3" value="0"> &lt;div&gt;<br>
+<input type="radio" name="q3" value="1"> &lt;p&gt;<br>
+<input type="radio" name="q3" value="0"> &lt;span&gt;<br>
+<input type="radio" name="q3" value="0"> &lt;br&gt;
+</div>
+
+<!-- Q4 -->
+<div class="question">
+<h5>4. Which tag is used for images?</h5>
+
+<input type="radio" name="q4" value="0"> &lt;picture&gt;<br>
+<input type="radio" name="q4" value="1"> &lt;img&gt;<br>
+<input type="radio" name="q4" value="0"> &lt;image&gt;<br>
+<input type="radio" name="q4" value="0"> &lt;src&gt;
+</div>
+
+<!-- Q5 -->
+<div class="question">
+<h5>5. Which tag creates a link?</h5>
+
+<input type="radio" name="q5" value="1"> &lt;a&gt;<br>
+<input type="radio" name="q5" value="0"> &lt;link&gt;<br>
+<input type="radio" name="q5" value="0"> &lt;href&gt;<br>
+<input type="radio" name="q5" value="0"> &lt;url&gt;
+</div>
+
+<button type="button"
+class="btn btn-danger"
+onclick="checkQuiz()">
+
+Submit Quiz
+
+</button>
+
+</form>
+
+<div id="result" class="result-box">
+
+<h3 id="scoreText"></h3>
+
+<p id="statusText"></p>
+
+<a href="certificate.html"
+id="certificateBtn"
+class="btn btn-success"
+style="display:none;">
+
+Download Certificate
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function checkQuiz(){
+
+let score = 0;
+
+let answers = document.querySelectorAll('input[type="radio"]:checked');
+
+answers.forEach(answer=>{
+score += parseInt(answer.value);
+});
+
+document.getElementById("result").style.display="block";
+
+document.getElementById("scoreText").innerHTML =
+"Your Score: " + score + " / 5";
+
+if(score >= 4){
+
+document.getElementById("statusText").innerHTML =
+"<span class='pass'>Congratulations! You Passed.</span>";
+
+document.getElementById("certificateBtn").style.display =
+"inline-block";
+
+}else{
+
+document.getElementById("statusText").innerHTML =
+"<span class='fail'>You Need At Least 4 Marks To Pass.</span>";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

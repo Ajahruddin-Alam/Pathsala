@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard | PathShala</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+body{
+    background:#f8fafc;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:260px;
+    height:100vh;
+    background:#111827;
+    padding:25px;
+    overflow-y:auto;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.sidebar-menu{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar-menu li{
+    margin-bottom:10px;
+}
+
+.sidebar-menu a{
+    color:#d1d5db;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active{
+    background:#e03a3c;
+    color:#fff;
+}
+
+/* Main */
+
+.main-content{
+    margin-left:260px;
+    padding:30px;
+}
+
+.welcome-card{
+    background:linear-gradient(135deg,#e03a3c,#ff6b6b);
+    color:#fff;
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.welcome-card h2{
+    font-weight:700;
+}
+
+/* Stats */
+
+.stat-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card i{
+    font-size:40px;
+    color:#e03a3c;
+}
+
+.stat-card h3{
+    margin-top:15px;
+    font-weight:700;
+}
+
+/* Course */
+
+.course-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    margin-top:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* Activity */
+
+.activity-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    margin-top:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.activity-item{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.activity-item:last-child{
+    border-bottom:none;
+}
+
+.btn-red{
+    background:#e03a3c;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn-red:hover{
+    background:#c62828;
+    color:#fff;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main-content{
+    margin-left:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+🎓 PathShala
+</div>
+
+<ul class="sidebar-menu">
+
+<li>
+<a href="#" class="active">
+<i class="bi bi-speedometer2"></i>
+ Dashboard
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-book"></i>
+ My Courses
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-file-earmark-text"></i>
+ Learning Materials
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-patch-question"></i>
+ Quizzes
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-award"></i>
+ Certificates
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-person"></i>
+ Profile
+</a>
+</li>
+
+<li>
+<a href="#">
+<i class="bi bi-box-arrow-right"></i>
+ Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main-content">
+
+<!-- Welcome -->
+
+<div class="welcome-card">
+
+<div class="d-flex justify-content-between align-items-center flex-wrap">
+
+<div>
+
+<h2>
+Welcome Back, Ajaharuddin 👋
+</h2>
+
+<p>
+Continue your learning journey and track your progress.
+</p>
+
+</div>
+
+<div class="text-center">
+
+<h3>🔥 12 Day Streak</h3>
+
+<small>
+Keep learning every day
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row mb-4">
+
+<div class="col-md-3">
+
+<button class="btn-red w-100">
+📚 Continue Learning
+</button>
+
+</div>
+
+<div class="col-md-3">
+
+<button class="btn btn-success w-100">
+🏆 Certificates
+</button>
+
+</div>
+
+<div class="col-md-3">
+
+<button class="btn btn-primary w-100">
+📄 Resources
+</button>
+
+</div>
+
+<div class="col-md-3">
+
+<button class="btn btn-dark w-100">
+👤 Profile
+</button>
+
+</div>
+
+</div>
+
+<!-- Stats -->
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-book-half"></i>
+
+<h3>4</h3>
+
+<p>Courses Enrolled</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-check-circle"></i>
+
+<h3>25</h3>
+
+<p>Lessons Completed</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-patch-check"></i>
+
+<h3>87%</h3>
+
+<p>Average Score</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-award"></i>
+
+<h3>2</h3>
+
+<p>Certificates Earned</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-fire"></i>
+
+<h3>12</h3>
+
+<p>Learning Streak</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="stat-card">
+
+<i class="bi bi-clock-history"></i>
+
+<h3>120h</h3>
+
+<p>Learning Hours</p>
+
+</div>
+
+</div>
+
+<!-- Current Course -->
+
+<div class="course-card">
+
+<h4>
+Current Course
+</h4>
+
+<h5>
+Full Stack Development
+</h5>
+
+<div class="progress mt-3">
+
+<div
+class="progress-bar bg-danger"
+style="width:65%">
+65%
+</div>
+
+</div>
+
+<p class="mt-3">
+You have completed 65% of the course.
+</p>
+
+<button class="btn-red">
+Continue Learning
+</button>
+
+</div>
+
+<div class="course-card">
+
+<h4 class="mb-4">
+📚 My Courses
+</h4>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<h5>Artificial Intelligence</h5>
+
+<p>45% Complete</p>
+
+<div class="progress">
+
+<div class="progress-bar bg-danger"
+style="width:45%">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<h5>Cyber Security</h5>
+
+<p>70% Complete</p>
+
+<div class="progress">
+
+<div class="progress-bar bg-success"
+style="width:70%">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<h5>Cloud & DevOps</h5>
+
+<p>20% Complete</p>
+
+<div class="progress">
+
+<div class="progress-bar bg-warning"
+style="width:20%">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Activity -->
+
+<div class="activity-card">
+
+<h4>
+Recent Activity
+</h4>
+
+<div class="activity-item">
+✅ Completed HTML Fundamentals Quiz
+</div>
+
+<div class="activity-item">
+📄 Downloaded CSS Notes
+</div>
+
+<div class="activity-item">
+🏆 Earned HTML Completion Certificate
+</div>
+
+<div class="activity-item">
+🚀 Started JavaScript Module
+</div>
+
+</div>
+
+<div class="activity-card">
+
+<h4>
+🏆 Certificates Earned
+</h4>
+
+<div class="activity-item">
+
+HTML Fundamentals Certificate
+
+</div>
+
+<div class="activity-item">
+
+CSS Mastery Certificate
+
+</div>
+
+<div class="activity-item">
+
+Career Preparation Certificate
+
+</div>
+<div class="activity-card">
+
+<h4>
+📅 Upcoming Lessons
+</h4>
+
+<div class="activity-item">
+
+JavaScript DOM Manipulation
+
+</div>
+
+<div class="activity-item">
+
+Cyber Security Fundamentals
+
+</div>
+
+<div class="activity-item">
+
+AWS EC2 Deployment
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
