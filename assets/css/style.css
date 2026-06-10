@@ -214,7 +214,23 @@ Team Section
 .navbar li:hover>a {
   color: #e03a3c;
 }
+body header div .nav-item{
+  margin: 10px;
+  border-radius: 10px;
+  background:#e03a3c;
+ color:black;
+ color: #000000;
+}
+body header div .nav-item button{
+font-size: 10px;
+margin: 5px;
+padding: 20px;
+text-align: center;
+align-items: center;
+font-weight: bold;
+border-radius: 10px;
 
+}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -405,6 +421,56 @@ width: 100%;
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+/* DARK MODE */
+
+body.dark-mode{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+body.dark-mode section{
+    background:transparent !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .course-card,
+body.dark-mode .module-card,
+body.dark-mode .overview-card,
+body.dark-mode .skill-card,
+body.dark-mode .resource-card,
+body.dark-mode .project-card,
+body.dark-mode .video-card,
+body.dark-mode .review-card,
+body.dark-mode .stat-card,
+body.dark-mode .certificate-box{
+    background:#1e293b !important;
+    color:#fff !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode li{
+    color: black;
+}
+body.dark-mode .course-meta span{
+  background:#1e293b !important;
+    color:white !important;
+}
+.roadmaps .courses .course-meta{
+color: #000000;
+}
+body.dark-mode .row, .container .footer p ul li a .col-lg-4{
+    background:#020617 !important;
+    color: white !important;
+}
+
+
 #hero .row{
   min-height:80vh;
   align-items:center;
@@ -3185,4 +3251,22 @@ body{ background: var(--bg); }
 
 .contact-form-modern button:hover{
     background:#c62828;
+}
+
+#courseSearch{
+
+padding:14px;
+font-size:14px;
+border-radius:12px;
+border-color: #e03a3c;
+cursor: pointer;
+
+}
+
+.input-group-text{
+
+background:#e03a3c;
+color:white;
+border:none;
+
 }

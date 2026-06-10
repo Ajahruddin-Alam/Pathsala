@@ -113,7 +113,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#learning-paths">Learning Paths
-</a></li>
+          </a></li>
           <li><a class="nav-link scrollto" href="#curriculum">Roadmaps</a></li>
           <li><a class="nav-link scrollto" href="#courses">Courses</a></li>
           <li><a class="nav-link scrollto" href="#team">Mentors</a></li>
@@ -126,7 +126,19 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="lesson.html" class="get-started-btn scrollto">Get Started</a>
+      <a href="lesson.html" class="get-started-btn">Get Started</a>
+
+<a class="nav-item">
+
+<button
+id="darkModeToggle"
+class="btn btn-outline-light">
+🌙 
+</button>
+
+</a>
+      
+
     </div>
   </header><!-- End Header -->
 
@@ -178,22 +190,22 @@ Start Learning
           <div class="dashboard-grid">
 
             <div class="dash-card">
-              <h3>120+</h3>
-              <p>Students</p>
+              <h3 class="counter" data-target="120">0</h3>
+              <p>Students Enrolled</p>
             </div>
 
             <div class="dash-card">
-              <h3>10+</h3>
+              <h3 class="counter" data-target="10">0</h3>
               <p>Projects</p>
             </div>
 
             <div class="dash-card">
-              <h3>25+</h3>
+              <h3 class="counter" data-target="25">0</h3>
               <p>Courses</p>
             </div>
 
             <div class="dash-card">
-              <h3>95%</h3>
+              <h3 class="counter" data-target="95">0</h3>
               <p>Success Rate</p>
             </div>
 
@@ -485,6 +497,28 @@ Business Automation
 Industry-focused courses designed to help you learn,
 build projects and grow your career.
 </p>
+<br>
+<div class="row justify-content-center mb-5">
+
+<div class="col-lg-6">
+
+<div class="input-group">
+
+<span class="input-group-text">
+🔍
+</span>
+
+<input
+type="text"
+id="courseSearch"
+class="form-control"
+placeholder="Search Courses (AI, Mobile App, Cloud & DevOps, Cyber Security.....)">
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -492,7 +526,7 @@ build projects and grow your career.
 
 <!-- Course 1 -->
 <!-- Course 4 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="Artificial Intelligence Machine Learning AI ChatGPT Automation Engineering">
 
 <div class="course-card">
 
@@ -524,7 +558,7 @@ Explore Course
 </div>
 
 <!-- Course 5 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="UI/UX Design HTML CSS JavaScript">
 
 <div class="course-card">
 
@@ -556,7 +590,7 @@ Explore Course
 </div>
 
 <!-- Course 6 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="Resume Building Interview Preparation Career growth">
 
 <div class="course-card">
 
@@ -588,7 +622,7 @@ Explore Course
 </div>
 
 <!-- Course 7 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="Cloud Computing Cloud Leanning Server Management CI/CD pipelines">
 
 <div class="course-card">
 
@@ -620,7 +654,7 @@ Explore Course
 </div>
 
 <!-- Course 8 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="Cyber Security Ethical Hacking Cyber protection">
 
 <div class="course-card">
 
@@ -652,7 +686,7 @@ Explore Course
 </div>
 
 <!-- Course 9 -->
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 course-item" data-course="Mobile App Developer Development Android Applications">
 
 <div class="course-card">
 
@@ -2130,6 +2164,8 @@ and career-focused education.
 <li href="ai.html">Artificial Intelligence</li>
 <li href="automation.html">Automation Engineering</li>
 <li href="analytics.html">Data Analytics</li>
+<li href="analytics.html">Cyber Security & Ethical Hacking</li>
+<li href="analytics.html">System Admin</li>
 </ul>
 
 </div>
