@@ -3222,125 +3222,83 @@ body{ background: var(--bg); }
 }
 
 .contact-info-card{
-  cursor: pointer;
-  background:
-linear-gradient(
-135deg,
-#0f172a,
-#2563eb,
-#e03a3c
-);
-    color: #FFFFFF;
-    padding:40px;
-    border-radius:20px;
-    height:100%;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-.contact-info-card{
 
     position:relative;
     overflow:hidden;
 
+    background:
+    linear-gradient(
+    135deg,
+    #0f172a,
+    #2563eb,
+    #e03a3c
+    );
+
+    background-size:200% 200%;
+
+    animation:gradientMove 8s ease infinite;
+
+    color:#fff;
+    padding:40px;
+    border-radius:20px;
+    height:100%;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:all .4s ease;
+      cursor: pointer;
 }
 
-.contact-info-card::after{
+.contact-info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.contact-info-card::before{
 cursor: pointer;
     content:"";
 
     position:absolute;
 
-    width:250px;
-    height:250px;
+    top:0;
+    left:-150%;
+
+    width:50%;
+    height:100%;
 
     background:
-    radial-gradient(
-        circle,
-        rgba(255,255,255,.15),
-        transparent 70%
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.18),
+    transparent
     );
 
-    opacity:0;
-
-    transition:.3s;
-
-    pointer-events:none;
+    transition:1s;
 
 }
 
-.contact-info-card:hover::after{
+.contact-info-card:hover::before{
 
-    opacity:1;
-
-}
-.contact-info-card::after{
-cursor: pointer;
-    left:var(--x);
-    top:var(--y);
-
-    transform:
-    translate(-50%,-50%);
-
-}
-.contact-info-card::before{
-cursor: pointer;
-    content:'';
-
-    position:absolute;
-
-    width:250px;
-    height:250px;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    top:-80px;
-    right:-80px;
-
-    animation:floatBubble 8s ease-in-out infinite;
+    left:150%;
 
 }
 
-.contact-info-card::after{
-cursor: pointer;
-    content:'';
+@keyframes gradientMove{
 
-    position:absolute;
-
-    width:180px;
-    height:180px;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.05);
-
-    bottom:-50px;
-    left:-50px;
-
-    animation:floatBubble2 10s ease-in-out infinite;
-
-}
-
-@keyframes floatBubble{
-
-    0%,100%{
-        transform:translateY(0);
+    0%{
+        background-position:0% 50%;
     }
 
     50%{
-        transform:translateY(25px);
+        background-position:100% 50%;
     }
 
-}
-
-@keyframes floatBubble2{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-20px);
+    100%{
+        background-position:0% 50%;
     }
 
 }
