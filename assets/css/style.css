@@ -79,18 +79,6 @@ Team Section
   opacity: 1;
 }
 
-
-/* .arrowed{
-  margin-right: 10px;
-  color: black;
-}
-.arrowUp{                            extra
-  margin-top: 25px;
-  margin-right: -20px;
-} */
-
-
-
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -216,6 +204,7 @@ Team Section
 }
 body header div .nav-item{
   margin: 10px;
+
   border-radius: 10px;
   background:#e03a3c;
  color:black;
@@ -447,27 +436,55 @@ body.dark-mode .certificate-box{
     background:#1e293b !important;
     color:#fff !important;
 }
-
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode p,
-body.dark-mode li{
-    color: black;
+body.dark-mode .contact-info-card,
+body.dark-mode .timeline-item,
+body.dark-mode .contact-info-card,
+body.dark-mode .roadmap-card,
+body.dark-mode .feature-card,
+body.dark-mode .tech-tags
+{
+color: #000000;
 }
-body.dark-mode .course-meta span{
+body.dark-mode li,
+body.dark-mode .container,
+body.dark-mode .section-title,
+body.dark-mode .row g-4{
+    color: white !important;
+}
+body.dark-mode .course-meta span,
+body.dark-mode .tab-content
+{
   background:#1e293b !important;
     color:white !important;
 }
-.roadmaps .courses .course-meta{
-color: #000000;
+.roadmaps .courses .course-meta .tech-tags *{
+color: #000000 !important;
 }
-body.dark-mode .row, .container .footer p ul li a .col-lg-4{
+body.dark-mode .d-none{
+  color: white !important;
+}
+body.dark-mode .ri-gps-line,
+body.dark-mode .ri-body-scan-line,
+body.dark-mode .ri-sun-line,
+body.dark-mode .ri-store-line{
+color: #e03a3c;
+}
+
+body.dark-mode .row,
+body.dark-mode .footer{
     background:#020617 !important;
     color: white !important;
+}
+body.dark-mode .course-card *,
+body.dark-mode .mentor-card *,
+
+body.dark-mode .stat-card *,
+body.dark-mode .module-card *,
+body.dark-mode .resource-card *,
+body.dark-mode .video-card *{
+
+    color:#fff ;
+
 }
 
 
@@ -475,6 +492,7 @@ body.dark-mode .row, .container .footer p ul li a .col-lg-4{
   min-height:80vh;
   align-items:center;
 }
+
 @media(max-width:991px){
 
   .hero-title{
@@ -490,6 +508,7 @@ body.dark-mode .row, .container .footer p ul li a .col-lg-4{
   }
 
 }
+
 .hero-tag{
   animation:fadeUp .8s ease;
   color:white;
